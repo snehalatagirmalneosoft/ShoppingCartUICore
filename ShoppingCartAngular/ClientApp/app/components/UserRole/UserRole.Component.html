@@ -1,0 +1,21 @@
+﻿<h1>{{title}}</h1>
+<h3>User Role</h3>
+<hr />
+
+<form [formGroup]="userRoleForm" (ngSubmit)="saveUserRole()" #formDir="ngForm">
+
+    <div class="form-group row">
+        <label class=" control-label col-md-12">Role Name</label>
+        <div class="col-md-4">
+            <input class="form-control" type="text" formControlName="roleName">
+        </div>
+        <span class="text-danger" *ngIf="roleName.invalid && formDir.submitted">
+            Role Name is required.
+        </span>
+    </div>
+     
+    <div class="form-group">
+        <button type="submit"  class="btn btn-default">Save Role</button>
+        <button class="btn" (click)="cancel()">Cancel</button>
+    </div>
+</form>   
