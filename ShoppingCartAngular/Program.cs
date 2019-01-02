@@ -12,6 +12,7 @@ namespace ShoppingCartAngular
 {
     public class Program
     {
+        //chk for git
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
