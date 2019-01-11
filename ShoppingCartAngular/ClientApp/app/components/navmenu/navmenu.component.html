@@ -32,7 +32,24 @@
                         <span class='glyphicon glyphicon-th-list'></span> User Role
                     </a>
                 </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/user']">
+                        <span class='glyphicon glyphicon-th-list'></span> User
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/category']">
+                        <span class='glyphicon glyphicon-th-list'></span> Category
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/subcategory']">
+                        <span class='glyphicon glyphicon-th-list'></span> Sub Category
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 </div>
+
+
